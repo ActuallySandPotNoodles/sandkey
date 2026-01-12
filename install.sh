@@ -4,10 +4,10 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 if [[ "$ARCH" == x86_64* ]]; then
-wget https://github.com/ActuallySandPotNoodles/diginum/releases/download/Reease-1.0.0/diginum -O /usr/bin/sandkey
+wget https://github.com/ActuallySandPotNoodles/sandkey/releases/download/1.0.0/sandkey-x86-64 -O /usr/bin/sandkey
 fi
 if [[ "$ARCH" == aarch64* ]]; then
-wget https://github.com/ActuallySandPotNoodles/diginum/releases/download/Reease-1.0.0/diginum_aarch64 -O /usr/bin/sandkey
+wget https://github.com/ActuallySandPotNoodles/sandkey/releases/download/1.0.0/sandkey-aarch64 -O /usr/bin/sandkey
 fi
 chmod 775 /usr/bin/sandkey
 mkdir /usr/share/sandpotnoodles
