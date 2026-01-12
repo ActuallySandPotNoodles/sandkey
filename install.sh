@@ -11,5 +11,5 @@ wget https://github.com/ActuallySandPotNoodles/sandkey/releases/download/1.0.0/s
 fi
 chmod 775 /usr/bin/sandkey
 mkdir /usr/share/sandpotnoodles
-wget https://raw.githubusercontent.com/ActuallySandPotNoodles/sandkey/refs/heads/main/SandKey.png -O /usr/share/sandpotnoodles/sandkey.png
+curl https://raw.githubusercontent.com/ActuallySandPotNoodles/sandkey/refs/heads/main/SandKey.png -o /usr/share/sandpotnoodles/sandkey.png
 wget https://raw.githubusercontent.com/ActuallySandPotNoodles/sandkey/refs/heads/main/sandkey.desktop -O /usr/share/applications/sandkey.desktop
