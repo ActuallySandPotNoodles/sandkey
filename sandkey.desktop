@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+
+Name=SandKey
+Exec=/usr/bin/sandkey
+Icon=/usr/share/sandpotnoodles/sandkey.png
+
+Comment=An extremely basic encryption system
+
+Categories=Utility
+Keywords=mintmix;sandpotnoodles;lock;encript;key;qt6
