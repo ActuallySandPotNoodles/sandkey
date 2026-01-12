@@ -10,7 +10,7 @@ Should work on both desktop and mobile however I am unsure about TV
 ![mobile screenshot](mobile.png)
 
 ### Install
-`curl [link] | sudo bash`
+`curl https://raw.githubusercontent.com/ActuallySandPotNoodles/sandkey/refs/heads/main/install.sh | sudo bash`
 
 It's that easy (once again)
 
