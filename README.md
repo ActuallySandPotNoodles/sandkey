@@ -27,7 +27,7 @@ It's that easy (once again)
 `sandkey.decode(Encripted data, password)`
 
 - This time the password is required
-- You may end up with an error with chr() caused by getting the password wrong and it trying to shift to bellow 0 (causing an error)
+- <s>You may end up with an error with chr() caused by getting the password wrong and it trying to shift to bellow 0 (causing an error)</s> //fixed it
 
 ### Planning to add
 `sandkey.xor(Your data, Password)`
