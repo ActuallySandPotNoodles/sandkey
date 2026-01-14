@@ -1,4 +1,5 @@
 import random
+LIMIT = 65536
 def encode(data, passwd):
     outp = []
     if passwd == "":
@@ -8,10 +9,12 @@ def encode(data, passwd):
         passwd = "".join(passy)
         print(f'KEY: {passwd}')
     for i in range(len(data)):
-        outp.append(chr(ord(data[i])+ord(passwd[i % len(passwd)])))
+        val = (ord(data[i]) + ord(passwd[i % len(passwd)])) % LIMIT
+        outp.append(chr(val))
     return "".join(outp)
 def decode(data, passwd):
     outp = []
     for i in range(len(data)):
-        outp.append(chr(ord(data[i])-ord(passwd[i % len(passwd)])))
+        val = (ord(data[i]) - ord(passwd[i % len(passwd)])) % LIMIT
+        outp.append(chr(val))
     return "".join(outp)
